@@ -7,6 +7,17 @@ public class Main {
 		System.out.println("这是我的啊，亲啊洒洒是事实上34569876！！hahahahaha");
 		System.out.println("再试试 2345  09876 asasasa");
 		System.out.println("00000再试试 2345  6789 asasasa");
+		String on = "h23e";
 		System.out.println("哈哈哈哈哈哈222222");
+		switch(on){
+		case "he":
+			System.out.println("hehe");
+			break;
+		case "on":
+			System.out.println("on");
+			break;
+		default:
+			System.out.println("default");
+		}
 	}
 }
