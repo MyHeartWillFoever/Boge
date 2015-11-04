@@ -13,23 +13,25 @@ public class Test {
 		Node n5 = new Node(5);
 		n4.next = n5;
 		Node res = reverse(n0);
-		while(res.next!=null){
+		while(res!=null&&res.next!=null){
 			System.out.print(res.value+" ");
 			res = res.next;
 		}
-		System.out.println(res.value);
+		if(res!=null){
+			System.out.println(res.value);
+		}
 	}
 	
 	public static Node reverse(Node node) {
-		Node preNode = null;
-		Node nextNode = null;
-		while(node != null){
-			nextNode = node.next;
-			node.next = preNode;
-			preNode = node;
-			node = nextNode;
+		if(node==null||node.next == null){
+			return node;
+		}else{
+			Node nextNode = node.next;
+			node.next = null;
+			Node res = reverse(nextNode);
+			nextNode.next = node;
+			return res;
 		}
-		return preNode;
 	}
 	private static class Node{
 		int value;

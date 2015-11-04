@@ -8,6 +8,7 @@ public class Main {
 		System.out.println("再试试 2345  09876 asasasa");
 		System.out.println("00000再试试 2345  6789 asasasa");
 		String on = "h23e";
+		String string;
 		System.out.println("哈哈哈哈哈哈222222");
 		switch(on){
 		case "he":
